@@ -1,0 +1,20 @@
+.home-root { background: #f6f7f8; min-height: 100vh; color: #0f172a; }
+.home-main { padding-bottom: 24px; }
+
+.home-hero { padding: 56px 0; }
+.home-hero-grid { display: grid; grid-template-columns: 1fr; gap: 26px; align-items: center; }
+.home-pill { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(186,86,212,0.12); color: #ba56d4; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.08em; }
+.home-title { margin: 10px 0 10px; font-size: 44px; line-height: 1.05; font-weight: 900; }
+.home-cta { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+
+.home-hero-img { width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; background: linear-gradient(120deg, rgba(186,86,212,0.28), transparent), #0f172a; box-shadow: 0 24px 60px rgba(15, 23, 42, 0.15); }
+
+.home-stats { background: #fff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; padding: 18px 0; }
+.home-stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.home-stat-label { margin: 0; color: #64748b; font-size: 13px; font-weight: 700; }
+.home-stat-value { margin: 0; font-size: 26px; font-weight: 900; }
+
+@media (min-width: 1024px) {
+  .home-hero-grid { grid-template-columns: 1.1fr 0.9fr; gap: 40px; }
+  .home-stats-grid { grid-template-columns: repeat(4, 1fr); }
+}

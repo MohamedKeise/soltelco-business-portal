@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent layout shifts by setting proper box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure body and root take full width without overflow */
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: block;
+}
+
+/* Global container for content with proper constraints */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Ensure all media elements are responsive */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scrolling on mobile */
+@media (max-width: 640px) {
+  html, body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}

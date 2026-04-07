@@ -1,0 +1,37 @@
+.mk-container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.mk-muted { color: #64748b; line-height: 1.7; }
+
+/* Header */
+.mk-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; }
+.mk-header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.mk-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0f172a; font-weight: 900; }
+.mk-logo { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; background: #ba56d4; color: #fff; }
+.mk-nav { display: none; gap: 18px; }
+.mk-nav a { text-decoration: none; color: #0f172a; font-weight: 700; font-size: 14px; }
+.mk-nav a.active { color: #ba56d4; }
+.mk-actions { display: flex; gap: 10px; }
+
+/* Buttons */
+.mk-btn { height: 40px; padding: 0 14px; border-radius: 10px; border: 0; cursor: pointer; font-weight: 800; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+.mk-btn-primary { background: #ba56d4; color: #fff; }
+.mk-btn-secondary { background: #e2e8f0; color: #0f172a; }
+
+/* Footer */
+.mk-footer { background: #fff; border-top: 1px solid #e2e8f0; padding: 48px 0 24px; }
+.mk-footer-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.mk-footer-title { margin: 0; }
+.mk-footer-grid h4 { margin: 0 0 10px; }
+.mk-footer-grid a { display: block; color: #64748b; text-decoration: none; margin: 6px 0; }
+.mk-footer-grid a:hover { color: #ba56d4; }
+.mk-footer-bottom { border-top: 1px solid #e2e8f0; margin-top: 18px; padding-top: 16px; display: flex; flex-direction: column; gap: 10px; color: #64748b; }
+.mk-footer-links { display: flex; gap: 16px; justify-content: center; }
+
+.mk-newsletter { display: flex; gap: 10px; margin-top: 8px; }
+.mk-newsletter input { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid #e2e8f0; outline: none; }
+.mk-newsletter input:focus { border-color: #ba56d4; box-shadow: 0 0 0 3px rgba(186,86,212,0.18); }
+
+@media (min-width: 1024px) {
+  .mk-nav { display: flex; }
+  .mk-footer-grid { grid-template-columns: 1.2fr 1fr 1fr 1.2fr; }
+  .mk-footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+}

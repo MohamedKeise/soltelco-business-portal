@@ -1,0 +1,19 @@
+{
+  "name": "soltelco-business-portal",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w apps/web",
+    "dev:api": "npm run dev -w apps/api"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "nodemailer": "^8.0.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^7.0.11"
+  }
+}
